@@ -35,75 +35,81 @@ const projectData = [
     {
         date: 'Feb 2022 - Present',
         title: 'Project 1',
-        description: ''
+        description: '',
+        image: '',
     },
     {
         date: 'Aug 2021 - Jan 2022',
         title: 'Project 2',
-        description: ''
+        description: '',
+        image: '',
     },
     {
         date: 'Oct 2019 - Oct 2020',
         title: 'Project 3',
-        description: ''
+        description: '',
+        image: '',
     },
     {
         date: 'Oct 2019 - Oct 2020',
         title: 'Proejct 4',
-        description: ''
+        description: '',
+        image: '',
     },
     {
         date: 'Nov 2018 - Sep 2019',
         title: 'Project 5',
-        description: ''
+        description: '',
+        image: '',
     },
     {
         date: 'Jul 2018 - Dec 2018',
         title: 'Project 6',
-        description: ''
+        description: '',
+        image: '',
     }
 ];
 
-const projects = document.getElementById('project');
+// const projects = document.getElementById('project');
 const timeline = document.getElementById('timeline');
 
-    projectData.forEach((item, index) => {
-        let entry = document.createElement('div');
-        entry.classList.add('timeline-entry');
-        entry.setAttribute('id', 'entry-' + index);
+    // projectData.forEach((item, index) => {
+    //     let entry = document.createElement('div');
+    //     entry.classList.add('timeline-entry');
+    //     entry.setAttribute('id', 'entry-' + index);
 
-        let dot = document.createElement('div');
-        dot.classList.add('timeline-dot');
+    //     let dot = document.createElement('div');
+    //     dot.classList.add('timeline-dot');
 
-        let date = document.createElement('div');
-        date.textContent = item.date;
-        date.classList.add('timeline-date');
+    //     let date = document.createElement('div');
+    //     date.textContent = item.date;
+    //     date.classList.add('timeline-date');
 
-        let content = document.createElement('div');
-        content.classList.add('timeline-content');
-        content.setAttribute('id', 'content-' + index);
+    //     let content = document.createElement('div');
+    //     content.classList.add('timeline-content');
+    //     content.setAttribute('id', 'content-' + index);
 
-        let title = document.createElement('h3');
-        title.textContent = item.title;
+    //     let title = document.createElement('h3');
+    //     title.textContent = item.title;
 
-        let description = document.createElement('p');
-        description.textContent = item.description;
-        description.style.display = 'none'; // Initially hide the description
+    //     let description = document.createElement('p');
+    //     description.textContent = item.description;
+    //     description.style.display = 'none'; // Initially hide the description
 
-        // Click event to toggle the description visibility
-        entry.addEventListener('click', function() {
-            description.style.display = description.style.display === 'none' ? 'block' : 'none';
-        });
+    //     // Click event to toggle the description visibility
+    //     entry.addEventListener('click', function() {
+    //         description.style.display = description.style.display === 'none' ? 'block' : 'none';
+    //     });
 
-        content.appendChild(title);
-        content.appendChild(description);
+    //     content.appendChild(title);
+    //     content.appendChild(description);
 
-        entry.appendChild(dot);
-        entry.appendChild(date);
-        entry.appendChild(content);
+    //     entry.appendChild(dot);
+    //     entry.appendChild(date);
+    //     entry.appendChild(content);
 
-        projects.appendChild(entry);
-    });
+    //     projects.appendChild(entry);
+    // });
 
     timelineData.forEach((item, index) => {
         let entry = document.createElement('div');
