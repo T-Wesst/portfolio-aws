@@ -11,8 +11,8 @@ const timelineData = [
         description: `Provided leadership and mentorship to over 23 students per semester, helping to enhance their web development skills. By debugging and improving the quality of student projects, I increased learning outcomes and efficiency by 25%. I led weekly two-hour discovery meetings to identify knowledge gaps and strengthen students' understanding of web development fundamentals. I also collaborated with instructional staff to implement tailored learning experiences and assisted in developing lesson plans and setting goals to improve student performance.`
     },
     {
-        date: 'Oct 2019 - Oct 2020',
-        title: 'Self Employed, NextGen Crafters',
+        date: 'Oct 2020 - Oct 2021',
+        title: 'Self Employed, NextGen Crafters LLC',
         description: `Built internal tools to automate workflows, reducing operational work for clients and improving efficiency. I also redesigned web and mobile layouts for a high-traffic, subscription-based website, enhancing user experience. In addition, I mentored and led a small team of web engineers, providing guidance and support to drive project success.`
     },
     {
