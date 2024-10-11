@@ -24,11 +24,6 @@ const timelineData = [
         date: 'Nov 2018 - Sep 2019',
         title: 'Web Development Teaching Assistant, Trilogy Education Services ',
         description: `developed teaching materials for over 12 students and coordinated academic services to provide additional support. I utilized a variety of virtual tools, including Zoom, online chats, video assignments, and online whiteboards, to enhance the learning experience. By optimizing lesson plans, I improved the efficiency and flow of 30-60 minute sessions, helping students achieve better learning outcomes.`
-    },
-    {
-        date: 'Jul 2018 - Dec 2018',
-        title: 'Business Development Intern, Headspace',
-        description: `Assisted in the development and management of corporate client account subscriptions, creating marketing presentations and surveys to boost student engagement and adoption. I analyzed and resolved JIRA tickets for approximately 233 B2B client accounts in Salesforce, helping the Customer Success team track client subscriptions and usage. On the front-end development side, I wrote well-structured HTML and modular CSS for mobile-responsive and cross-browser designs. I debugged errors using Chrome Developer Tools and integrated JavaScript components into applications. I also refactored Ember.js code and migrated partner account landing pages into Contentful. Throughout, I followed agile and scrum processes, using tools like Google Suite, Slack, JIRA, Git, GitHub, and Notion to collaborate and conduct code reviews. I tested the web application for bugs and ensured compatibility across various browsers and environments using BrowserStack.`
     }
 ];
 const projectData = [
