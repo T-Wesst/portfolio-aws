@@ -144,3 +144,13 @@ const timeline = document.getElementById('timeline');
         timeline.appendChild(entry);
     });
 });
+
+let url = "https://hgurqhdtin6ds2jn6rut4gymmy0uqooe.lambda-url.us-west-2.on.aws";
+const counter = document.querySelector(".counter-number");
+async function updateCounter(){
+    let response = await fetch(url);
+    let data = await response.json();
+    counter.innerHTML = (`Views: ${data.Attributes.views}`)
+}
+
+updateCounter();
