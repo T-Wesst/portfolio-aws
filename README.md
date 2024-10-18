@@ -16,7 +16,8 @@ The following AWS services are utilized in this project:
 - **AWS Route 53**: Manages the DNS records for the domain, allowing users to access the resume via a custom domain.
 - **AWS CloudFront**: Serves as a Content Delivery Network (CDN) to distribute the website content globally and improve loading times.
 - **AWS Certificate Manager**: Provides SSL/TLS certificates to secure the website with HTTPS.
-- **AWS CodePipeline**: Automates the deployment of the site by integrating with the S3 bucket, ensuring continuous delivery of updates.
+- **GitHub Actions**: Automates the deployment process by syncing the latest code to S3 and invalidating the CloudFront cache on every push to the main branch.
+
 
 ## Implementation Steps
 1. **Setup S3**: 
@@ -38,8 +39,10 @@ The following AWS services are utilized in this project:
 6. **Set Up AWS Certificate Manager**:
    - Requested and configured an SSL certificate to enable HTTPS for the domain.
 
-7. **Implement CodePipeline**:
-   - Created a CodePipeline to automate the deployment of the website updates directly from the source code repository to the S3 bucket.
+7. **Set Up GitHub Actions**:
+   - Configured GitHub Actions to automate deployments. On every push to the `main` branch:
+     1. Files are synced to the `website` directory in the S3 bucket.
+     2. CloudFront cache is invalidated to ensure users receive the latest content.
 
 ## Final Outcome
 The project successfully tracks the number of visitors to the site, demonstrating the use of various AWS services in a practical application. This implementation not only showcases my technical skills but also highlights my ability to integrate cloud services for a seamless user experience.
@@ -50,5 +53,5 @@ The project successfully tracks the number of visitors to the site, demonstratin
 - [AWS Route 53 Documentation](https://docs.aws.amazon.com/Route53/latest/DeveloperGuide/Welcome.html)
 - [AWS CloudFront Documentation](https://docs.aws.amazon.com/AmazonCloudFront/latest/DeveloperGuide/Welcome.html)
 - [AWS Certificate Manager Documentation](https://docs.aws.amazon.com/acm/latest/userguide/acm-overview.html)
-- [AWS CodePipeline Documentation](https://docs.aws.amazon.com/codepipeline/latest/userguide/welcome.html)
+- [GitHub Actions Documentation](https://docs.github.com/en/actions)
 - [Amazon S3 Documentation](https://docs.aws.amazon.com/AmazonS3/latest/userguide/Welcome.html)
