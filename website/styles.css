@@ -126,6 +126,13 @@ li {
     overflow: hidden;
 }
 
+#projects ul {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 1em;
+}
+
 /* Timeline Styles */
 .timeline {
     border-left: 3px solid #4CAF50;
